@@ -1,7 +1,7 @@
 // import { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import { getAllDataAPI } from "./redux/slice";
-import Button from './components/Button'
+import TextField from './components/TextField'
 import buttons from './style/buttons.json'
 
 function App() {
@@ -17,7 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <Button loginType={buttons.apple} />
+      <TextField type={"email"} Icon={"password"} />
+      {/* <Button loginType={buttons.apple} /> */}
     </div>
   );
 }
