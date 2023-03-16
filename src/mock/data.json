@@ -1,0 +1,27 @@
+{
+    "footerData":["© 2015 - 2023 Upwork® Global Inc.","Privacy Policy"],
+    "dontHaveAccount":"Don't have an Upwork account? ",
+    "normalLogin":"Continue with Email",
+    "normalRegister":"Create my Account",
+    "remmberMe":"Keep me logged in",
+    "loginPage":"Log in to Upwork",
+    "registerPage":"Sign up to find work you love",
+    "sendHelpfullemail":"Send me helpful emails to find rewarding work and job leads.",
+
+    "requiedEmail":{"field":"email","err":"Please Enter email first"},
+    "requiedFirstName":{"field":"fName","err":"Please Enter name please"},
+    "requiedLastName":{"field":"lName","err":"Please Enter name please"},
+
+
+    "correctEmail":{"field":"email","err":"Enter Email Correclty"},
+    "requiedPassword":{"field":"password","err":"Please Enter password first"},
+    "correctPassword":{"field":"password","err":"Enter Password Correclty (letters and numbers)"},
+    "minLengthPassword":{"field":"password","err":"Password should be longer than 6"},
+    "maxLengthPassword":{"field":"password","err":"Password should be shorter than 10"},
+    "minLengthFirstName":{"field":"fName","err":"First Name should be longer than 6"},
+    "maxLengthFirstName":{"field":"fName","err":"First Name should be shorter than 15"},
+    "minLengthLastName":{"field":"lName","err":"Last Name should be longer than 6"},
+    "maxLengthLastName":{"field":"lName","err":"Last Name should be shorter than 15"},
+
+    "passwordRegex":"^[A-Za-z0-9]*$"
+}

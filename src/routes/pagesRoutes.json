@@ -1,0 +1,13 @@
+{
+    "loginPage":"/",
+    "mainPage":"/nx",
+    "homePage":"find-work",
+    "jobDeatils":"details",
+    "profilePage":"profile",
+    "searchPage":"search/*",
+    "registerPage":"/register",
+    "elsePages":"*",
+    "Best Matches":"best-matchs",
+    "Most Resent":"most-recent",
+    "Saved Jobs":"saved-jobs"
+}

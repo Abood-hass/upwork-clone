@@ -1,18 +1,56 @@
 {
   "jobs": [
-    { 
-        "task":
-        {
-            "title":"Java, Springboot, Microservices",
+    {
+        "id":"1",
+        "createdAt":"20-2-2021",
+        "task":{
+            "title":"Java",
             "desc":"We need a candidate having more than 5 years of experience in below technologies Skills - java, springboot, microservices, junit Time-anytime between 8 pm IST to 11 pm IST Duration -2 hours( Monday to Friday) Budget -22 k monthly",
             "type":"remote",
             "pay":{
                 "price":265,
-                "paymentType":"FixedPrice"
+                "paymentType":"Fixed Price"
             },
             "period":{"from":2,"to":3,"unit":"month"}
         },
-        "freelancer":{
+        "freelancerReq":{
+            "title":"Intermediate",
+            "location":["Worldwide"],
+            "wantedSkills":[
+                "javascript","react","node"
+            ]
+        },
+        "applicants":{
+            "Proposals":30,
+            "Interviewing":0,
+            "Invites":0,
+            "Unanswered":0
+        },
+        "client":{
+            "rate":4,
+            "countOfRates": 12,
+            "jobPosted":61,
+            "totalSpent":18000,
+            "avgHourPrice":25,
+            "typeOfBusiness":"IT"
+        }
+    }
+
+    ,{
+        "id":"2",
+        "createdAt":"20-2-2020",
+        "task":
+        {
+            "title":"Computer science Senior",
+            "desc":"We need a candidate having more than 5 years of experience in below technologies Skills - java, springboot, microservices, junit Time-anytime between 8 pm IST to 11 pm IST Duration -2 hours( Monday to Friday) Budget -22 k monthly",
+            "type":"remote",
+            "pay":{
+                "price":265,
+                "paymentType":"Fixed Price"
+            },
+            "period":{"from":2,"to":3,"unit":"month"}
+        },
+        "freelancerReq":{
             "title":"Intermediate",
             "location":["Worldwide"],
             "wantedSkills":[
@@ -24,7 +62,58 @@
             "Interviewing":0,
             "Invites":0,
             "Unanswered":0
+        },
+        "client":{
+            "rate":4,
+            "countOfRates": 12,
+            "jobPosted":61,
+            "totalSpent":18000,
+            "avgHourPrice":25,
+            "typeOfBusiness":"IT"
         }
     }
-  ]
+  ],
+  
+  "Profile":{
+    "imgUrl":"",
+    "name":"Abood hass",
+    "email":"abood@gmail.com",
+    "title":"Computer science",
+    "hourPrice":"15.00",
+    "desc":"my name abdullah metqal hassouna\nmy DOB 2000/11/9\nmy skills :\n1- java script\n2- node.js\n3- React.js\n4- HTML\n5- CSS\n6- java\n7- mySQl\n8- MongoDB\n\nI am ready to work but not full time before the 2022 because I still study in IUG in meddle east.",
+    "languages":[
+        {"lang":"English","level":"Conversational"},
+        {"lang":"Arabic","level":"I am Arabic ._."}
+    ],
+    "Education":[
+        {
+            "place":"Islamic University in Gaza",
+            "degree":"Computer science",
+            "preiod":{
+                "from":"2018",
+                "to":"2022"
+                }
+            }
+    ],
+    "Jobs":
+    {
+        "previuosJobs":[
+            {
+                "title":"Facebook clone",
+                "feedback":"",
+                "rate":4
+            },
+            {
+                "title":"Facebook clone",
+                "feedback":"",
+                "rate":4
+            }
+        ],
+        "savedJobs":[]
+    }
+  
 }
+
+
+}
+

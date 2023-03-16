@@ -1,4 +1,5 @@
 {
         "google":"googleLogin",
-        "apple":"appleLogin"
+        "apple":"appleLogin",
+        "register":"registerOutline"
 }

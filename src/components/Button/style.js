@@ -7,17 +7,24 @@ export const CustomButton = styledOverride(Button)`
   background:${style.mainGreenColor};
   width:100%;
   border-radius:20px;
-  :hover{
-  background:${style.mainGreenColor}50;
-  }
+  font-weight:600;
   postion:relative;
+  height:35px;
+  font-size:14px;
+  :disabled{
+    cursor:not-allowed;
+    border-color: gray;
+  }
+  :hover{
+    background:${style.mainGreenColor}d5;
+  }
 `
 
 export const GoogleLogin = {
   background: style.loginGoogleColor,
   "&:hover": {
-    background: style.loginGoogleColor + 50
-  }
+    background: style.loginGoogleColor + "d5"
+  },
 }
 
 export const AppleLogin = {
@@ -37,4 +44,14 @@ export const LoginIcon = styled.img({
   marginRight: "10px"
 });
 
+
+export const RegisterOutline = {
+  background: "#fff",
+  color: style.mainGreenColor,
+  border: `1px solid ${style.mainGreenColor}`,
+  "&:hover": {
+    background: style.mainGreenColor + 50,
+    borderColor: style.mainGreenColor + 30,
+  }
+}
 
