@@ -11,7 +11,7 @@
                 "price":265,
                 "paymentType":"Fixed Price"
             },
-            "period":{"from":2,"to":3,"unit":"month"}
+            "period":{"from":0,"to":1,"unit":"month"}
         },
         "freelancerReq":{
             "title":"Intermediate",
@@ -34,10 +34,45 @@
             "avgHourPrice":25,
             "typeOfBusiness":"IT"
         }
+    },
+    {
+        "id":"2",
+        "createdAt":"20-2-2021",
+        "task":{
+            "title":"Java",
+            "desc":"We need a candidate having more than 5 years of experience in below technologies Skills - java, springboot, microservices, junit Time-anytime between 8 pm IST to 11 pm IST Duration -2 hours( Monday to Friday) Budget -22 k monthly",
+            "type":"remote",
+            "pay":{
+                "price":265,
+                "paymentType":"Fixed Price"
+            },
+            "period":{"from":2,"to":3,"unit":"month"}
+        },
+        "freelancerReq":{
+            "title":"entryLevel",
+            "location":["Worldwide"],
+            "wantedSkills":[
+                "javascript","react","node"
+            ]
+        },
+        "applicants":{
+            "Proposals":10,
+            "Interviewing":0,
+            "Invites":0,
+            "Unanswered":0
+        },
+        "client":{
+            "rate":4,
+            "countOfRates": 12,
+            "jobPosted":61,
+            "totalSpent":18000,
+            "avgHourPrice":25,
+            "typeOfBusiness":"IT"
+        }
     }
 
     ,{
-        "id":"2",
+        "id":"3",
         "createdAt":"20-2-2020",
         "task":
         {
@@ -48,10 +83,10 @@
                 "price":265,
                 "paymentType":"Fixed Price"
             },
-            "period":{"from":2,"to":3,"unit":"month"}
+            "period":{"from":3,"to":6,"unit":"month"}
         },
         "freelancerReq":{
-            "title":"Intermediate",
+            "title":"expert",
             "location":["Worldwide"],
             "wantedSkills":[
                 "java","microservices","spring Boot"

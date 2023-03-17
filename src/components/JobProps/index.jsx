@@ -1,4 +1,4 @@
-import { Grid, Typography, useMediaQuery } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import PriceTagIcon from '../../assets/icons/price-tag.png'
 import IntelligenceIcon from '../../assets/icons/intelligence.png'
 import ContractIcon from '../../assets/icons/contract-24.png'

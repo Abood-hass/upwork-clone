@@ -8,17 +8,20 @@ import { Box, Typography } from '@mui/material'
 import { useDispatch, useSelector } from "react-redux";
 import { searchJobsAPI, getAllJobsAPI } from "../../redux/slice";
 import { Filters } from './filtersData'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, } from 'react-router-dom'
 import routes from '../../routes/pagesRoutes.json'
 
 export default function Index() {
     const [searchWord, setSearchWord] = useState("")
     const [FiltersValues, setFilterValues] = useState([])
+
+    let { state: { searchKey } } = useLocation();
+
     const nav = useNavigate()
 
     const dispatch = useDispatch()
 
-    const { jobs, isLoading } = useSelector(state => state.data)
+    let { jobs, isLoading } = useSelector(state => state.data)
 
 
     function onChangeOpiton({ target }) {
@@ -39,12 +42,16 @@ export default function Index() {
     useEffect(() => {
         setFilterValues(Filters)
         dispatch(getAllJobsAPI())
-        console.log(jobs)
-
+        if (searchKey) {
+            setSearchWord(searchKey)
+            onSearch(searchWord)
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {
-    }, [FiltersValues])
+        // dispatch(getFilteredJobsAPI(Filters))
+    }, [dispatch])
 
 
 

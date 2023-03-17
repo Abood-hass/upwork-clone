@@ -6,7 +6,7 @@ import Card from '@mui/icons-material/CardTravelOutlined';
 import React from 'react'
 import { Box } from '@mui/system';
 
-export default function index({ hideMenu, sx, value, onChange }) {
+export default function index({ hideMenu, sx, value, onChange, onClick }) {
 
     const searchOptions = [
         {
@@ -58,7 +58,7 @@ export default function index({ hideMenu, sx, value, onChange }) {
                 ),
                 startAdornment: (
                     <InputAdornment position="end">
-                        <SearchIcon />
+                        <SearchIcon onClick={onClick} />
                     </InputAdornment>
                 )
 

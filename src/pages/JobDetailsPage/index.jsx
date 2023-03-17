@@ -23,7 +23,7 @@ export default function Index({ jobId }) {
 
     useEffect(() => {
         dispatch(getJobAPI(jobId || id))
-    }, [])
+    }, [jobId, id, dispatch])
 
 
     const paddingStyle = {

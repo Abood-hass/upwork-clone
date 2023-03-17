@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { IconContainer, iconStyle, JobDesc, JobPayingInfo, JobPostContainer, JobProposalsInfo, JobTitle, JobTitleContainer, Tag, } from './style'
+import { IconContainer, iconStyle, JobDesc, JobPayingInfo, JobPostContainer, JobProposalsInfo, JobTitle, JobTitleContainer, } from './style'
 import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import VerifiedIcon from '@mui/icons-material/Verified';

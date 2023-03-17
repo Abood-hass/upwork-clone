@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Chip, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import colors from '../../style/colors.json'
 
 export const JobPostContainer = styled(Box)({

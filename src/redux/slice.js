@@ -18,19 +18,16 @@ export const dataSlicer = createSlice({
         getAllJobs: (state, action) => {
             state.jobs = action.payload
         },
-        filterJobsExp: (state, action) => {
-            state.jobs = state.jobs.filter((job) => job.freelancerReq.title === action.payload)
-        },
         isLoading: (state, action) => {
             state.isLoading = action.payload
         },
         setError: (state, action) => {
             state.error = { message: action.payload }
-        },
+        }
     }
 })
 
-const { getJob, getAllJobs, isLoading, setError, filterJobsExp } = dataSlicer.actions
+const { getJob, getAllJobs, isLoading, setError, } = dataSlicer.actions
 
 export const getJobAPI = (id) => async (dispatch) => {
     dispatch(isLoading(true))
@@ -71,5 +68,27 @@ export const getAllJobsAPI = () => async (dispatch) => {
         dispatch(isLoading(false))
     }
 }
+
+export const getFilteredJobsAPI = (filter) => async (dispatch) => {
+    dispatch(isLoading(true))
+    try {
+        let { data } = await axios.get(`${API_URL}jobs`)
+        // let newData = []
+
+        // filter.map((F) => {
+        //     if (F.title) {
+        //         newData = data.filter((job) =>
+        //             (job.task.title))
+        //     }
+        // })
+
+        dispatch(getAllJobs(data))
+    } catch (error) {
+        setError("Somthing went wrong")
+    } finally {
+        dispatch(isLoading(false))
+    }
+}
+
 
 export default dataSlicer.reducer

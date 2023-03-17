@@ -7,6 +7,7 @@ import Avatar from '../Avatar'
 import Tab from '../Tab'
 import colors from '../../style/colors.json'
 import breackPoint from '../../style/breackPoint.json'
+import routes from '../../routes/pagesRoutes.json'
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
@@ -15,9 +16,12 @@ import CloseIcon from '@mui/icons-material/Close';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { DirectContacts, help, Help, Logout, menu, Message, Notification, Setting } from './data'
+import { useNavigate } from 'react-router-dom'
 
 
 function Index() {
+    const [searchKey, setSearchKey] = useState('');
+    const nav = useNavigate();
 
     const MX = useMediaQuery(breackPoint.mainPage.mx)
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -171,7 +175,9 @@ function Index() {
                                 </Box>
                             </Box>
                             <Box display={"flex"} alignItems="center">
-                                <SearchBar />
+                                <SearchBar value={searchKey}
+                                    onChange={({ target: { value } }) => setSearchKey(value)}
+                                    onClick={() => nav(routes.searchPage, { state: { searchKey } })} />
                                 <Box display={"flex"} alignItems="center" gap={3} paddingX={2}>
                                     <Menu menu={help} type="help" />
                                     <SendOutlinedIcon />
